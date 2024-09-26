@@ -18,6 +18,7 @@ def mostrar_informacion_cpu():
     print(f"Soporte de 64 bits: {info_cpu.get('bits', 'Información no disponible')}")
     print(f"Soporte de virtualización: {info_cpu.get('vmx', 'Información no disponible')}")
     print(f"Soporte de Hyper-Threading: {info_cpu.get('ht', 'Información no disponible')}")
+    print(f"Etiqueta de la CPU: {info_cpu.get('brand', 'Información no disponible')}")
 
 if __name__ == "__main__":
     mostrar_informacion_cpu()
